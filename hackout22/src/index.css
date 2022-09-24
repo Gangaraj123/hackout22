@@ -1,13 +1,84 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-item {
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.card-container,
+.navbar-expand-lg {
+  font-family: inherit;
+  background: #fdc830;
+  background: -webkit-linear-gradient(to bottom, #f37335, #fdc830);
+  background: linear-gradient(to bottom, #f37335, #fdc830);
+  transition: 0.3s;
+}
+
+.card-container:hover {
+  background: #fdc830;
+  background: -webkit-linear-gradient(to bottom, #fdc830, #f37335);
+  background: linear-gradient(to bottom, #fdc830, #f37335);
+}
+
+.form-control:focus {
+  border-color: #fdc830;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgb(253, 200, 48, 0.8);
+}
+
+.heading {
+  font-family: "Bungee Spice", cursive;
+}
+
+.Typewriter__cursor {
+  color: red;
+  font-size: 1.2em;
+}
+
+@keyframes text {
+  0% {
+    color: #ff4500;
+  }
+  30% {
+    color: orange;
+  }
+  50% {
+    color: #f94d00;
+  }
+  70% {
+    color: #c46210;
+  }
+  100% {
+    color: #ff4f00;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
